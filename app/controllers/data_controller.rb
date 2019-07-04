@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class DataController < ApplicationController
-  before_action :set_datum, only: [:show, :update, :destroy]
+  before_action :set_datum, only: %i[show update destroy]
 
   # GET /data
   def index
@@ -41,13 +43,14 @@ class DataController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_datum
-      @datum = Datum.find(params[:id])
-    end
 
-    # Only allow a trusted parameter "white list" through.
-    def datum_params
-      params.permit(:devise, :PM2_5, :PM10, :feeling, :latitude, :longitude)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_datum
+    @datum = Datum.find(params[:id])
+  end
+
+  # Only allow a trusted parameter "white list" through.
+  def datum_params
+    params.permit(:devise, :PM2_5, :PM10, :feeling, :latitude, :longitude)
+  end
 end

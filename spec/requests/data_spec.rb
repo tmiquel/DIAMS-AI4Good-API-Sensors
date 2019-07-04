@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe 'Data API', type: :request do
-  # initialize test data 
+  # initialize test data
   let!(:Data) { create_list(:datum, 10) }
   let(:datum_id) { Datum.first.id }
 
@@ -52,7 +54,7 @@ RSpec.describe 'Data API', type: :request do
   # Test suite for POST /data
   describe 'POST /data' do
     # valid payload
-    let(:valid_attributes) {{ devise: 'Anne', PM2_5: '3', PM10: '4', feeling: '6', latitude:  '-14.7', longitude: '139.4'}}
+    let(:valid_attributes) { { devise: 'Anne', PM2_5: '3', PM10: '4', feeling: '6', latitude: '-14.7', longitude: '139.4' } }
 
     context 'when the request is valid' do
       before { post '/data', params: valid_attributes }
@@ -67,7 +69,7 @@ RSpec.describe 'Data API', type: :request do
     end
 
     context 'when the request is invalid' do
-      before { post '/data', params: { } }
+      before { post '/data', params: {} }
 
       it 'returns status code 422' do
         expect(response).to have_http_status(422)

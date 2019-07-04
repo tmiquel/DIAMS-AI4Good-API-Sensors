@@ -31,11 +31,13 @@ class DataController < ApplicationController
     else
       render json: @datum.errors, status: :unprocessable_entity
     end
+    head :no_content
   end
 
   # DELETE /data/1
   def destroy
     @datum.destroy
+    head :no_content
   end
 
   private
@@ -46,6 +48,6 @@ class DataController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def datum_params
-      params.require(:datum).permit(:devise, :PM2_5, :PM10, :feeling, :latitude, :longitude)
+      params.permit(:devise, :PM2_5, :PM10, :feeling, :latitude, :longitude)
     end
 end

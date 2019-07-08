@@ -35,6 +35,9 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'jwt'
 
+#2019/07/08: as per error message when deploying to Heroku
+gem 'bundler', '~> 2.0.1'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]

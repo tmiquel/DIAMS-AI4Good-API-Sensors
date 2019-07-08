@@ -19,7 +19,9 @@ ActiveRecord::Schema.define(version: 2019_07_04_123809) do
     t.string "devise"
     t.string "PM2_5"
     t.string "PM10"
-    t.integer "feeling"
+    t.integer "positive_feeling"
+    t.integer "mixed_feeling"
+    t.integer "negative_feeling"
     t.string "latitude"
     t.string "longitude"
     t.datetime "created_at", null: false

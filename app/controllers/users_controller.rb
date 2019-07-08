@@ -1,5 +1,5 @@
 # app/controllers/users_controller.rb
-class UsersController < ApplicationController
+class UsersController < ApiController
     skip_before_action :authorize_request, only: :create
 
   # POST /signup

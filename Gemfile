@@ -62,5 +62,5 @@ end
 
 group :production do
 	gem 'pg'
-  gem 'bundler', '~> 2.0.1'
+	gem 'bundler', '~> 2.0.1'
 end

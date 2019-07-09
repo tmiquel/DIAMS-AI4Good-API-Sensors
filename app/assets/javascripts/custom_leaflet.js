@@ -29,3 +29,15 @@ function onMapClick(e) {
 
 mapid_ozone_varjs.on('click', onMapClick);
 
+ realtime = L.realtime({
+        url: 'https://wanderdrone.appspot.com/',
+        crossOrigin: true,
+        type: 'json'
+    }, {
+        interval: 3 * 1000
+    }).addTo(mapid_ozone_varjs);
+
+realtime.on('update', function() {
+    mapid_ozone_varjs.fitBounds(realtime.getBounds(), {maxZoom: 3});
+});
+

@@ -50,6 +50,7 @@ class DataController < ApiController
 
     # Only allow a trusted parameter "white list" through.
     def datum_params
+			params.feeling.to_i
       params.permit(:devise, :PM2_5, :PM10, :feeling, :latitude, :longitude)
     end
 end

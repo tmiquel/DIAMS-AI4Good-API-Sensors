@@ -1,12 +1,12 @@
-# frozen_string_literal: true
-
 class CreateData < ActiveRecord::Migration[5.2]
   def change
     create_table :data do |t|
       t.string :devise
       t.string :PM2_5
       t.string :PM10
-      t.integer :feeling
+      t.integer :positive_feeling
+      t.integer :mixed_feeling
+      t.integer :negative_feeling
       t.string :latitude
       t.string :longitude
 

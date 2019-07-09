@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe "topics/show", type: :view do
+RSpec.describe "maps/show", type: :view do
   before(:each) do
-    @topic = assign(:topic, Topic.create!())
+    @map = assign(:map, Map.create!())
   end
 
   it "renders attributes in <p>" do

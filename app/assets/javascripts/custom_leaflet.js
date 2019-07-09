@@ -1,6 +1,6 @@
 // OZONE MAP FROM ATMOSUD
 
-var mapid_ozone_varjs = L.map('mapid').setView([43.807827, 6.204262], 7);
+var mapid_ozone_varjs = L.map('mapid').setView([46.227638, 2.213749], 6.2);
 
 //fitBounds([[42.858, 4.855], [45.731, 7.759]]);
 
@@ -15,8 +15,8 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 }).addTo(mapid_ozone_varjs);
 
 
-var marker = L.marker([43.300771, 5.382177]).addTo(mapid_ozone_varjs);
-marker.bindPopup("<b>PM10 :</b><br>valeur associé.<br><b>PM2_5 :</b><br>valeur associé.").openPopup();
+//var marker = L.marker([43.300771, 5.382177]).addTo(mapid_ozone_varjs);
+//marker.bindPopup("<b>PM10 :</b><br>valeur associé.<br><b>PM2_5 :</b><br>valeur associé.").openPopup();
 
 var popup = L.popup();
 
@@ -28,3 +28,4 @@ function onMapClick(e) {
 }
 
 mapid_ozone_varjs.on('click', onMapClick);
+

@@ -1,6 +1,6 @@
 // OZONE MAP FROM ATMOSUD
 
-var mapid_ozone_atmosud_varjs = L.map('mapida').setView([43.807827, 6.204262], 8);
+var mapid_ozone_atmosud_varjs = L.map('mapida').setView([43.807827, 6.204262], 7);
 
 //fitBounds([[42.858, 4.855], [45.731, 7.759]]);
 
@@ -101,6 +101,8 @@ legend.onAdd = function (mapid_ozone_atmosud_varjs) {
 legend.addTo(mapid_ozone_atmosud_varjs);
 
 L.control.scale({imperial:false}).addTo(mapid_ozone_atmosud_varjs);
+
+
 
 
 

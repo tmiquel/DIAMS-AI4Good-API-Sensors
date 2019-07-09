@@ -1,10 +1,6 @@
-<<<<<<< HEAD
 # frozen_string_literal: true
 
 class DataController < ApiController
-=======
-class DataController < ApplicationController
->>>>>>> master
   before_action :set_datum, only: [:show, :update, :destroy]
 
   # GET /data

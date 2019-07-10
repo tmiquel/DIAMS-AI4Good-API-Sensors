@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(version: 2019_07_10_125449) do
     t.string "longitude"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "device"
   end
 
   create_table "maps", force: :cascade do |t|

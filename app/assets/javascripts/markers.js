@@ -1,11 +1,11 @@
 // Markers initialization, to free them when got a update from one
 var markers = {};
 // Initialization with real values for the first time
-updatePointer(mapid_ozone_varjs);
+updatePointer(sensors_map);
 // Timer to update
-setInterval(updatePointer, 10000, mapid_ozone_varjs);
+setInterval(updatePointer, 10000, sensors_map);
 
-// Takes the map id (mapid_ozone_varjs)
+// Takes the map id (sensors_map)
 function updatePointer(mapId) {
   $.get("/last_data", function (datas) {
     console.log(datas);
@@ -25,6 +25,6 @@ function updatePointer(mapId) {
       marker.bindPopup(`<b>PM10:</b><br>${data['PM10']}<br><b>PM2_5 :</b><br>${data['PM2_5']}`);
       markers[data["devise"]] = marker.addTo(mapId)
     }
-    // var marker = L.marker([43.300771, 5.382177], {icon: greenIcon}).addTo(mapid_ozone_varjs);
+    // var marker = L.marker([43.300771, 5.382177], {icon: greenIcon}).addTo(sensors_map);
   });
 }

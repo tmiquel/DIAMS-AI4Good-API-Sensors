@@ -14,9 +14,11 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
     accessToken: 'pk.eyJ1IjoidG1pcXVlbCIsImEiOiJjanU5d3AzenEyY2QxNDRucnF2c3pydW8wIn0.PQGiuirI2MraPTanoBJzRQ'
 }).addTo(mapid_ozone_varjs);
 
+// var anne = <% @anne %>;
+// byebug
 
-//var marker = L.marker([43.300771, 5.382177]).addTo(mapid_ozone_varjs);
-//marker.bindPopup("<b>PM10 :</b><br>valeur associé.<br><b>PM2_5 :</b><br>valeur associé.").openPopup();
+var marker = L.marker([43.300771, 5.382177]).addTo(mapid_ozone_varjs);
+marker.bindPopup("<b>PM10 :</b><br>"+ anne + "<br><b>PM2_5 :</b><br>valeur associé.").openPopup();
 
 var popup = L.popup();
 

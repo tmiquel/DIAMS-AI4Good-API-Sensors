@@ -4,12 +4,14 @@ class MapsController < ApplicationController
   # GET /maps
   # GET /maps.json
   def index
+    @anne = "prout"
     @maps = Map.all
   end
 
   # GET /maps/1
   # GET /maps/1.json
   def show
+
   end
 
   # GET /maps/new

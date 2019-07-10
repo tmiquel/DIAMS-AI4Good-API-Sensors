@@ -78,4 +78,4 @@ gem 'dotenv-rails'
 gem "rgeo"
 gem 'rgeo-activerecord'
 gem 'rgeo-geojson'
-
+gem 'geocoder'

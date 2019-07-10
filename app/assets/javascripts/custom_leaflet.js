@@ -15,8 +15,8 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 }).addTo(mapid_ozone_varjs);
 
 
-var marker = L.marker([43.300771, 5.382177]).addTo(mapid_ozone_varjs);
-marker.bindPopup("<b>PM10 :</b><br>valeur associé.<br><b>PM2_5 :</b><br>valeur associé.").openPopup();
+//var marker = L.marker([43.300771, 5.382177]).addTo(mapid_ozone_varjs);
+//marker.bindPopup("<b>PM10 :</b><br>valeur associé.<br><b>PM2_5 :</b><br>valeur associé.").openPopup();
 
 var popup = L.popup();
 
@@ -41,3 +41,38 @@ realtime.on('update', function() {
     mapid_ozone_varjs.fitBounds(realtime.getBounds(), {maxZoom: 3});
 });
 
+function getCustomData(success, error) { 
+    let url = "https://wanderdrone.appspot.com/"; //url of service 
+    var xhr = new XMLHttpRequest(); 
+    xhr.open('GET', url); 
+    xhr.onload = function() { 
+     if (xhr.status === 200) { 
+      var res = convertToGeoJSON(xhr.responseText); 
+      success(res); 
+     } else { 
+      var e = new Error("HTTP Rquest") 
+       error(e, xhr.status); 
+     } 
+    }; 
+    xhr.send(); 
+} 
+
+function convertToGeoJSON(input){ 
+    var fs={"type": "FeatureCollection", "features": []}; 
+    for(var i=0;i<input.length;i++){ 
+     var ele=input[i]; 
+     var feature={ 
+       "type": "Feature", 
+       "geometry": { 
+       "type": "Point", 
+       "coordinates":[ele['longitude'],ele['latitude']] 
+       }}; 
+     feature.properties=ele; 
+
+     //add this feature to the features array 
+     fs.features.push(feature) 
+
+    } 
+    //return the GeoJSON FeatureCollection 
+    return fs; 
+} 

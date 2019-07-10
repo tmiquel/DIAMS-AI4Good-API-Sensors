@@ -53,4 +53,8 @@ class DataController < ApiController
 			params.feeling.to_i
       params.permit(:devise, :PM2_5, :PM10, :feeling, :latitude, :longitude)
     end
+
+    def json(params)
+      ::RGeo::GeoJSON.encode(self)
+    end
 end

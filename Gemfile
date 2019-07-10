@@ -27,6 +27,9 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# Jquery for rails
+gem 'jquery-rails'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
@@ -76,4 +79,3 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'jwt'
 gem 'leaflet-rails'
 gem 'dotenv-rails'
-

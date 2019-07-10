@@ -2,9 +2,7 @@ class Location < ApplicationRecord
 	after_create -> { link_pos(self, self.get_last_datum) }
 
 	def matches?(datum, seuil)
-		puts self.created_at
-		puts "€"*660
-		puts datum.created_at
+		puts datum.created_at.to_s+"#################"
 		if ((self.created_at - datum.created_at) < seuil)
 			return true
 		else
@@ -21,7 +19,7 @@ class Location < ApplicationRecord
 	end
 
 	def get_last_datum
-		Datum.where(devise: self.device).last
+		return Datum.where(devise: self.device).last
 	end
 
 end

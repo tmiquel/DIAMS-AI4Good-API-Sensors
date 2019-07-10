@@ -1,5 +1,5 @@
 class Location < ApplicationRecord
-	after_create -> { link_pos(get_last_datum(self)) }
+	after_create -> { link_pos(self.get_last_datum) }
 
 	def matches?(datum, seuil)
 		if ((self.created_at  - datum.created_at) < seuil)

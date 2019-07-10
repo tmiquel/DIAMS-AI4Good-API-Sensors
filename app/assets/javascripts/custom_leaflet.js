@@ -346,8 +346,8 @@ mapid_ozone_varjs.on('click', onMapClick);
 // Leaflet color markers
 // Got it from https://github.com/pointhi/leaflet-color-markers because we would need to create colored marker
 var blueIcon = new L.Icon({
-	iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png',
-	shadowUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-shadow.png',
+	iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png',
+	shadowUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-shadow.png',
 	iconSize: [25, 41],
 	iconAnchor: [12, 41],
 	popupAnchor: [1, -34],
@@ -356,7 +356,7 @@ var blueIcon = new L.Icon({
 
 var redIcon = new L.Icon({
 	iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
-	shadowUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-shadow.png',
+	shadowUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-shadow.png',
 	iconSize: [25, 41],
 	iconAnchor: [12, 41],
 	popupAnchor: [1, -34],
@@ -365,7 +365,7 @@ var redIcon = new L.Icon({
 
 var greenIcon = new L.Icon({
 	iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
-	shadowUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-shadow.png',
+	shadowUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-shadow.png',
 	iconSize: [25, 41],
 	iconAnchor: [12, 41],
 	popupAnchor: [1, -34],
@@ -374,7 +374,7 @@ var greenIcon = new L.Icon({
 
 var orangeIcon = new L.Icon({
 	iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-orange.png',
-	shadowUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-shadow.png',
+	shadowUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-shadow.png',
 	iconSize: [25, 41],
 	iconAnchor: [12, 41],
 	popupAnchor: [1, -34],
@@ -383,7 +383,7 @@ var orangeIcon = new L.Icon({
 
 var yellowIcon = new L.Icon({
 	iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-yellow.png',
-	shadowUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-shadow.png',
+	shadowUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-shadow.png',
 	iconSize: [25, 41],
 	iconAnchor: [12, 41],
 	popupAnchor: [1, -34],
@@ -392,7 +392,7 @@ var yellowIcon = new L.Icon({
 
 var violetIcon = new L.Icon({
 	iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-violet.png',
-	shadowUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-shadow.png',
+	shadowUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-shadow.png',
 	iconSize: [25, 41],
 	iconAnchor: [12, 41],
 	popupAnchor: [1, -34],

@@ -15,8 +15,8 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 }).addTo(mapid_ozone_varjs);
 
 
-//var marker = L.marker([43.300771, 5.382177]).addTo(mapid_ozone_varjs);
-//marker.bindPopup("<b>PM10 :</b><br>valeur associé.<br><b>PM2_5 :</b><br>valeur associé.").openPopup();
+var marker = L.marker([43.300771, 5.382177]).addTo(mapid_ozone_varjs);
+marker.bindPopup("<b>PM10 :</b><br>valeur associé.<br><b>PM2_5 :</b><br>valeur associé.").openPopup();
 
 var popup = L.popup();
 
@@ -29,7 +29,7 @@ function onMapClick(e) {
 
 mapid_ozone_varjs.on('click', onMapClick);
 
- realtime = L.realtime({
+realtime = L.realtime({
         url: 'https://wanderdrone.appspot.com/',
         crossOrigin: true,
         type: 'json'

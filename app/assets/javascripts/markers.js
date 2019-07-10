@@ -7,7 +7,7 @@ setInterval(updatePointer, 10000, mapid_ozone_varjs);
 
 // Takes the map id (mapid_ozone_varjs)
 function updatePointer(mapId) {
-  $.get("/data", function (datas) {
+  $.get("/last_data", function (datas) {
     console.log(datas);
     for (var i = 0; i < datas.length; i++) {
       var data = datas[i]

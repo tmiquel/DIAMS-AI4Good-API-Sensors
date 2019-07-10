@@ -28,7 +28,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Jquery for rails
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -75,7 +75,6 @@ group :production do
 end
 
 gem 'bcrypt', '~> 3.1.7'
-
 gem 'jwt'
 gem 'leaflet-rails'
 gem 'dotenv-rails'

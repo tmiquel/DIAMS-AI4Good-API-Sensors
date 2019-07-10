@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :last_data
   resources :locations
   resources :maps
   resources :data

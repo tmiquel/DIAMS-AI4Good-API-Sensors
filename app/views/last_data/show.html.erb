@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Devise:</strong>
+  <%= @last_datum.devise %>
+</p>
+
+<p>
+  <strong>Pm2 5:</strong>
+  <%= @last_datum.PM2_5 %>
+</p>
+
+<p>
+  <strong>Pm10:</strong>
+  <%= @last_datum.PM10 %>
+</p>
+
+<p>
+  <strong>Positive feeling:</strong>
+  <%= @last_datum.positive_feeling %>
+</p>
+
+<p>
+  <strong>Mixed feeling:</strong>
+  <%= @last_datum.mixed_feeling %>
+</p>
+
+<p>
+  <strong>Negative feeling:</strong>
+  <%= @last_datum.negative_feeling %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @last_datum.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @last_datum.longitude %>
+</p>
+
+<%= link_to 'Edit', edit_last_datum_path(@last_datum) %> |
+<%= link_to 'Back', last_data_path %>

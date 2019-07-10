@@ -1,0 +1,57 @@
+<%= form_with(model: last_datum, local: true) do |form| %>
+  <% if last_datum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(last_datum.errors.count, "error") %> prohibited this last_datum from being saved:</h2>
+
+      <ul>
+      <% last_datum.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :devise %>
+    <%= form.text_field :devise %>
+  </div>
+
+  <div class="field">
+    <%= form.label :PM2_5 %>
+    <%= form.text_field :PM2_5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :PM10 %>
+    <%= form.text_field :PM10 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :positive_feeling %>
+    <%= form.number_field :positive_feeling %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mixed_feeling %>
+    <%= form.number_field :mixed_feeling %>
+  </div>
+
+  <div class="field">
+    <%= form.label :negative_feeling %>
+    <%= form.number_field :negative_feeling %>
+  </div>
+
+  <div class="field">
+    <%= form.label :latitude %>
+    <%= form.text_field :latitude %>
+  </div>
+
+  <div class="field">
+    <%= form.label :longitude %>
+    <%= form.text_field :longitude %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -17,7 +17,7 @@ class Location < ApplicationRecord
 		end
 	end
 
-	def get_last_datum(location)
+	def get_last_datum
 		Datum.where(devise: self.device).last
 	end
 

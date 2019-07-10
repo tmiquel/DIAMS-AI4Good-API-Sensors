@@ -1,24 +1,24 @@
 class Location < ApplicationRecord
-	after_create -> { link_pos(get_last_datum(self)) }
+	after_create -> { link_pos(self, self.get_last_datum) }
 
 	def matches?(datum, seuil)
-		if ((self.created_at  - datum.created_at) < seuil)
+		puts "ù"*660
+		puts datum.created_at
+		if ((self.created_at - datum.created_at) < seuil)
 			return true
 		else
 			return false
 		end
 	end
 
-	def link_pos(datum)
-		if self.matches?(datum, 30)
-			datum.latitude = self.latitude
-			datum.longitude = self.longitude
-			datum.save
+	def link_pos(location, datum)
+		if location.matches?(datum, 30)
+			datum.update(latitude: self.latitude, longitude: self.longitude)
 		end
 	end
 
-	def get_last_datum(location)
-		Datum.where(devise: self.device).last
+	def get_last_datum
+		return Datum.where(devise: self.device).last
 	end
 
 end

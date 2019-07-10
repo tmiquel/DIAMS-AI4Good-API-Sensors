@@ -30,7 +30,7 @@ function onMapClick(e) {
 mapid_ozone_varjs.on('click', onMapClick);
 
 realtime = L.realtime({
-        url: 'https://wanderdrone.appspot.com/',
+        url: 'http://localhost:3000/last_data/1',
         crossOrigin: true,
         type: 'json'
     }, {
@@ -42,7 +42,7 @@ realtime.on('update', function() {
 });
 
 function getCustomData(success, error) { 
-    let url = "https://wanderdrone.appspot.com/"; //url of service 
+    let url = "http://localhost:3000/last_data/1"; //url of service 
     var xhr = new XMLHttpRequest(); 
     xhr.open('GET', url); 
     xhr.onload = function() { 

@@ -1,14 +1,4 @@
 class LastDatum < ApplicationRecord
-	
-	# def self.devise_name_to_id
-	# 	return Hash[[ ['anne',1],['camille', 2],['remy', 3],['amine', 4],['auguste', 5]]]
-	# end
-
-	# def self.devise_name_to_id
-	# 	return Hash[[ ['anne',1],['camille', 2],['remy', 3],['amine', 4],['auguste', 5]]]
-	# end
-
-
 	def self.update_from_Datum(datum)
 		lastdatum_from_datum_new_item_array = LastDatum.where(devise: datum.devise)
 		if lastdatum_from_datum_new_item_array.size == 0

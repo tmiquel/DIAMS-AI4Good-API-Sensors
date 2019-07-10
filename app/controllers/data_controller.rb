@@ -1,4 +1,6 @@
-class DataController < ApplicationController
+# frozen_string_literal: true
+
+class DataController < ApiController
   before_action :set_datum, only: [:show, :update, :destroy]
 
   # GET /data

@@ -31,6 +31,13 @@ ActiveRecord::Schema.define(version: 2019_07_09_090119) do
   create_table "locations", force: :cascade do |t|
     t.string "latitude"
     t.string "longitude"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "maps", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

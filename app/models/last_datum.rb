@@ -1,5 +1,5 @@
 class LastDatum < ApplicationRecord
-	def self.update_from_Datum(datum)
+	def self.update_from_Arduino(datum)
 		lastdatum_from_datum_new_item_array = LastDatum.where(devise: datum.devise)
 		if lastdatum_from_datum_new_item_array.size == 0
 			LastDatum.create(
@@ -18,10 +18,17 @@ class LastDatum < ApplicationRecord
 				PM10: datum.PM10,
 				positive_feeling: datum.positive_feeling,
 				mixed_feeling: datum.mixed_feeling, 
-				negative_feeling: datum.negative_feeling,
+				negative_feeling: datum.negative_feeling)
+		end
+	end
+
+
+	def self.update_from_GPSLogger(datum)
+		lastdatum_from_datum_new_item_array = LastDatum.where(devise: datum.devise)
+		unless lastdatum_from_datum_new_item_array.size == 0
+			lastdatum_from_datum_new_item_array.last.update(
 				latitude: datum.latitude,
 				longitude: datum.longitude)
 		end
 	end
-
 end

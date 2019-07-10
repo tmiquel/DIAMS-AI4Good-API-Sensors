@@ -27,6 +27,9 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# Jquery for rails
+gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
@@ -43,6 +46,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails', '~> 3.5'
+  gem 'table_print'
 end
 
 group :development do
@@ -71,11 +75,13 @@ group :production do
 end
 
 gem 'bcrypt', '~> 3.1.7'
-
 gem 'jwt'
 gem 'leaflet-rails'
 gem 'dotenv-rails'
+<<<<<<< HEAD
 gem "rgeo"
 gem 'rgeo-activerecord'
 gem 'rgeo-geojson'
 gem 'geocoder'
+=======
+>>>>>>> master

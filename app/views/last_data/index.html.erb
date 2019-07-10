@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Last Data</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Devise</th>
+      <th>Pm2 5</th>
+      <th>Pm10</th>
+      <th>Positive feeling</th>
+      <th>Mixed feeling</th>
+      <th>Negative feeling</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @last_data.each do |last_datum| %>
+      <tr>
+        <td><%= last_datum.devise %></td>
+        <td><%= last_datum.PM2_5 %></td>
+        <td><%= last_datum.PM10 %></td>
+        <td><%= last_datum.positive_feeling %></td>
+        <td><%= last_datum.mixed_feeling %></td>
+        <td><%= last_datum.negative_feeling %></td>
+        <td><%= last_datum.latitude %></td>
+        <td><%= last_datum.longitude %></td>
+        <td><%= link_to 'Show', last_datum %></td>
+        <td><%= link_to 'Edit', edit_last_datum_path(last_datum) %></td>
+        <td><%= link_to 'Destroy', last_datum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Last Datum', new_last_datum_path %>

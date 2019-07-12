@@ -72,6 +72,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 group :production do
 	gem 'pg', '>= 0.18', '< 2.0'
 	gem 'bundler', '~> 2.0.1'
+	gem 'aws-sdk-s3'
 end
 
 gem 'bcrypt', '~> 3.1.7'

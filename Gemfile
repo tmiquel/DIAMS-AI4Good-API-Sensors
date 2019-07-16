@@ -81,3 +81,8 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'jwt'
 gem 'leaflet-rails'
 gem 'dotenv-rails'
+gem "rgeo"
+gem 'rgeo-activerecord'
+gem 'rgeo-geojson'
+gem 'geocoder'
+gem 'will_paginate', '~> 3.1.0'

@@ -5,6 +5,14 @@ class DataController < ApiController
 
   # GET /data
   def index
+     # get current user data
+    @data = current_user.data
+      json_response(@data)
+   
+    # get paginated current user todos
+    @data = current_user.data.paginate(page: params[:page], per_page: 20)
+      json_response(@data)
+
     @data = Datum.all
 
     render json: @data
@@ -17,6 +25,10 @@ class DataController < ApiController
 
   # POST /data
   def create
+    # create data belonging to current user
+    @datum = current_user.data.create!(datum_params)
+      json_response(@datum, :created)
+      
     @datum = Datum.new(datum_params)
 
     if @datum.save
@@ -54,5 +66,9 @@ class DataController < ApiController
       params[:mixed_feeling].to_i
       params[:negative_feeling].to_i
       params.permit(:devise, :PM2_5, :PM10, :positive_feeling, :mixed_feeling, :negative_feeling, :latitude, :longitude)
+    end
+
+    def json(params)
+      ::RGeo::GeoJSON.encode(self)
     end
 end

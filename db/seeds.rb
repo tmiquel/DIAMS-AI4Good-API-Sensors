@@ -51,3 +51,4 @@ Datum.create(devise: 'negative',
 	negative_feeling: 1,
 	longitude: "49.1",
 	latitude: "3.2")
+

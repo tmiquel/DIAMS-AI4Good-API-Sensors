@@ -3,7 +3,7 @@ class Location < ApplicationRecord
 
 	def link_pos(datum)
 		if datum
-			if self.matches?(datum, 3000)
+			if self.matches?(datum, 60)
 				datum.update_attributes(latitude: self.latitude, longitude: self.longitude)
 				datum.save
 			end

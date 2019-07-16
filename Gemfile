@@ -82,3 +82,4 @@ gem "rgeo"
 gem 'rgeo-activerecord'
 gem 'rgeo-geojson'
 gem 'geocoder'
+gem 'will_paginate', '~> 3.1.0'

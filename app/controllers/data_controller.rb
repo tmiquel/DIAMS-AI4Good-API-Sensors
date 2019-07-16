@@ -5,6 +5,14 @@ class DataController < ApiController
 
   # GET /data
   def index
+     # get current user data
+    @data = current_user.data
+      json_response(@data)
+   
+    # get paginated current user todos
+    @data = current_user.data.paginate(page: params[:page], per_page: 20)
+      json_response(@data)
+
     @data = Datum.all
 
     render json: @data
@@ -17,6 +25,10 @@ class DataController < ApiController
 
   # POST /data
   def create
+    # create data belonging to current user
+    @datum = current_user.data.create!(datum_params)
+      json_response(@datum, :created)
+      
     @datum = Datum.new(datum_params)
 
     if @datum.save

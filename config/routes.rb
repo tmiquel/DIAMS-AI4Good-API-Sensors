@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   resources :locations
   resources :maps
   resources :data
+  post 'auth/login', to: 'authentication#authenticate'
+  post 'signup', to: 'users#create'
   
   root 'maps#index'
 

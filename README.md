@@ -14,6 +14,7 @@ Les particules sont détectées à partir d'un diamètre de 0.3μm et les mesure
 <br />
 <hr />
 <em>Localisation :</em>
+<img src='https://zupimages.net/up/19/29/8be3.jpg' alt='world map picture' />
 <p>Il est également possible d'associer une position à une mesure en suivant la démarche suivante :
   <ul><li>1 _ téléchargement de l'application ==> https://play.google.com/store/apps/details?id=com.mendhak.gpslogger&hl=fr</li>
   <li>2 _ dans l'onglet 'détails de l'enregistrement', puis dans 'envoyer les fichiers vers une url personnalisée', entrer les données suivantes :

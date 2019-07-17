@@ -23,7 +23,7 @@ Les particules sont détectées à partir d'un diamètre de 0.3μm et les mesure
     entête HTTP : Content-type: application/json
     methode HTTP : POST
     -- laisser les autres champs vides.</li>
-  <li>3 _ dans 'envoyer auto couriel et téléchargement',
+  <li>4 _ dans 'envoyer auto couriel et téléchargement',
 autoriser l'envoi automatique, puis dans 'combien de fois?' entrer en minutes la fréquence (strictement positive) à laquelle seront envoyées les positions.</li></ul>
 Les données de géolocalisation sont accessibles sur l'url http://simple-ai4good-sensors-api.herokuapp.com/locations et affichent la mesure correspondante sur la carte (http://simple-ai4good-sensors-api.herokuapp.com/) à condition que moins d'une minute sépare l'enregistrement sur l'API de la mesure et celle de la localisation.</p>
 <br />

@@ -1,6 +1,5 @@
 class JsonWebToken
     # secret to encode and decode token
-    #HMAC_SECRET = Rails.application.secrets.secret_key_base
     HMAC_SECRET = DIAMSAi4goodApiSensors::Application.credentials.secret_key_base
 
   

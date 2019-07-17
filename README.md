@@ -17,8 +17,8 @@ Les particules sont détectées à partir d'un diamètre de 0.3μm et les mesure
 <img src='https://zupimages.net/up/19/29/8be3.jpg' alt='world map picture' />
 <p>Il est également possible d'associer une position à une mesure en suivant la démarche suivante :
   <ul><li>1 _ téléchargement de l'application ==> https://play.google.com/store/apps/details?id=com.mendhak.gpslogger&hl=fr</li>
-    <li>2 _ Une fois l'application téléchargé, appuyer sur le menu en haut a droite <img src='https://zupimages.net/up/19/29/my1r.jpg' alt='step 1' />
-  <li>2 _ dans l'onglet 'détails de l'enregistrement', puis dans 'envoyer les fichiers vers une url personnalisée', entrer les données suivantes :
+    <li>2 _ Une fois l'application téléchargé, appuyer sur le menu en haut a droite 
+  <li>3 _ dans l'onglet 'détails de l'enregistrement', puis dans 'envoyer les fichiers vers une url personnalisée', entrer les données suivantes :
     url : http://simple-ai4good-sensors-api.herokuapp.com/locations?device={{{METTRE LE NOM DU DEVICE ICI SANS LES ACCOLADES}}}&latitude=%LAT&longitude=%LON
     entête HTTP : Content-type: application/json
     methode HTTP : POST

@@ -4,7 +4,7 @@
 <em>Schéma relationnel :</em>
 <br>
 <br>
-<img align='center' src='https://zupimages.net/up/19/29/wp9b.png' alt='schema relationnel' />
+<img src='https://zupimages.net/up/19/29/wp9b.png' alt='schema relationnel' />
 <br />
 <hr />
 <em>Capteurs :</em>

@@ -4,8 +4,6 @@
 <em>Schéma relationnel :</em>
 <img src="https://zupimages.net/up/19/29/09qm.jpg" alt="a relationnale scheme showing 3 tables: Datum(ID, timestamp, devise, PM2_5, PM10, positive_feeling, mixed_feeling, negative_feeling, latitude & longitude), LastDatum(ID, timestamp, devise, PM2_5, PM10, positive_feeling, mixed_feeling, negative_feeling, latitude & longitude), and Location(ID, timestamp, device, latitude & longitude).">
 <br />
-<img src='https://zupimages.net/up/19/29/wp9b.png' alt='schema relationnel' />
-<br />
 <hr />
 <em>Capteurs :</em>
 <p>Les capteurs utilisés sont les SDS011 produits par Nova Fitness. Ils permettent une mesure rapide et précise de la concentration de l'air en μg/m³ de particules fines (PM2.5 et PM10).

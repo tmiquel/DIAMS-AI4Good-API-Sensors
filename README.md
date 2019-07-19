@@ -2,7 +2,7 @@
 <h2 align="center">Sensor measurements API</h2>
 
 <em>Schéma relationnel :</em>
-<p>Future link to relational schema</p>
+<img src='https://zupimages.net/up/19/29/wp9b.png' alt='schema relationnel' />
 <br />
 <hr />
 <em>Capteurs :</em>

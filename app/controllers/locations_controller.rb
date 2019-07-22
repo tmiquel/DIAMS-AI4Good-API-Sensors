@@ -15,7 +15,15 @@ class LocationsController < ApiController
 
   # POST /locations
   def create
-    @location = Location.new(location_params)
+    if params.keys.include?('latitude') #input from Android GPS Logger
+      @location = Location.new(location_params)
+    else #input from Apple Overland
+      @location = Location.new(
+      longitude:params[:locations][0][:geometry][:coordinates][0].to_s, 
+      latitude: params[:locations][0][:geometry][:coordinates][1].to_s,
+      device: params[:device].to_s)
+    #params[:locations][0][:geometry][:coordinates][0]
+    end
 
     if @location.save
       render json: @location, status: :created, location: @location
@@ -46,7 +54,6 @@ class LocationsController < ApiController
 
     # Only allow a trusted parameter "white list" through.
     def location_params
-      byebug
       params.permit(:latitude, :longitude, :device)
     end
 end

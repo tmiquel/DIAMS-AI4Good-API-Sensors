@@ -3,8 +3,9 @@ class LocationsController < ApiController
 
   # GET /locations
   def index
-    @locations = Location.all
-
+    @locations = Rack::Reducer.call(params, dataset: Location.all, filters: [
+      ->(device:) { where('lower(device) like ?', "%#{device.downcase}%") },
+    ])
     render json: @locations
   end
 

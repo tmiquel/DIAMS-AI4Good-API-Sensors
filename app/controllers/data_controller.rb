@@ -56,4 +56,5 @@ class DataController < ApiController
       params[:negative_feeling].to_i
       params.permit(:device, :PM2_5, :PM10, :positive_feeling, :mixed_feeling, :negative_feeling, :latitude, :longitude)
     end
+
 end

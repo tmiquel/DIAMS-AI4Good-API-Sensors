@@ -77,6 +77,7 @@ group :production do
 	gem 'aws-sdk-s3'
 end
 
+gem 'rack-reducer', require: 'rack/reducer'
 gem 'bcrypt', '~> 3.1.7'
 gem 'jwt'
 gem 'leaflet-rails'

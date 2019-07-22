@@ -46,6 +46,7 @@ class LocationsController < ApiController
 
     # Only allow a trusted parameter "white list" through.
     def location_params
+      byebug
       params.permit(:latitude, :longitude, :device)
     end
 end

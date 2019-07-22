@@ -25,7 +25,7 @@ class LocationsController < ApiController
     end
 
     if @location.save
-      render json: @location, status: :created, result: "ok", location: @location
+      render json: {"result": "ok"} #as explained in Overland README to delte previous data
     else
       render json: @location.errors, status: :unprocessable_entity
     end

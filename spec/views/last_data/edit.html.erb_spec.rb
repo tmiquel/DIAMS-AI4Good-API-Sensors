@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe "last_data/edit", type: :view do
   before(:each) do
     @last_datum = assign(:last_datum, LastDatum.create!(
-      :devise => "MyString",
+      :device => "MyString",
       :PM2_5 => "MyString",
       :PM10 => "MyString",
       :positive_feeling => 1,
@@ -19,7 +19,7 @@ RSpec.describe "last_data/edit", type: :view do
 
     assert_select "form[action=?][method=?]", last_datum_path(@last_datum), "post" do
 
-      assert_select "input[name=?]", "last_datum[devise]"
+      assert_select "input[name=?]", "last_datum[device]"
 
       assert_select "input[name=?]", "last_datum[PM2_5]"
 

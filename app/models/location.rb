@@ -11,7 +11,7 @@ class Location < ApplicationRecord
 	end
 
 	def get_last_datum
-		Datum.where(devise: self.device).last
+		Datum.where(device: self.device).last
 	end
 
 	def matches?(datum, seuil)

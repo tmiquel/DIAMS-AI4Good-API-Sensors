@@ -55,6 +55,6 @@ class LastDataController < ApiController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def last_datum_params
-      params.require(:last_datum).permit(:devise, :PM2_5, :PM10, :positive_feeling, :mixed_feeling, :negative_feeling, :latitude, :longitude)
+      params.require(:last_datum).permit(:device, :PM2_5, :PM10, :positive_feeling, :mixed_feeling, :negative_feeling, :latitude, :longitude)
     end
 end

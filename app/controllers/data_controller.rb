@@ -6,7 +6,7 @@ class DataController < ApiController
   # GET /data
   def index
     @data = Rack::Reducer.call(params, dataset: Datum.all, filters: [
-      ->(devise:) { where('lower(devise) like ?', "%#{devise.downcase}%") },
+      ->(device:) { where('lower(device) like ?', "%#{device.downcase}%") },
     ])
     render json: @data
   end
@@ -19,7 +19,7 @@ class DataController < ApiController
   # POST /data
   def create
     @datum = Datum.new(datum_params)
-		@datum = @datum.devise.downcase
+		@datum = @datum.device.downcase
     if @datum.save
       render json: @datum, status: :created, location: @datum
     else
@@ -54,6 +54,6 @@ class DataController < ApiController
       params[:positive_feeling].to_i
       params[:mixed_feeling].to_i
       params[:negative_feeling].to_i
-      params.permit(:devise, :PM2_5, :PM10, :positive_feeling, :mixed_feeling, :negative_feeling, :latitude, :longitude)
+      params.permit(:device, :PM2_5, :PM10, :positive_feeling, :mixed_feeling, :negative_feeling, :latitude, :longitude)
     end
 end

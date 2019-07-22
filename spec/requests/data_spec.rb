@@ -52,13 +52,13 @@ RSpec.describe 'Data API', type: :request do
   # Test suite for POST /data
   describe 'POST /data' do
     # valid payload
-    let(:valid_attributes) {{ devise: 'Anne', PM2_5: '3', PM10: '4', feeling: '6', latitude:  '-14.7', longitude: '139.4'}}
+    let(:valid_attributes) {{ device: 'Anne', PM2_5: '3', PM10: '4', feeling: '6', latitude:  '-14.7', longitude: '139.4'}}
 
     context 'when the request is valid' do
       before { post '/data', params: valid_attributes }
 
       it 'creates a datum' do
-        expect(json['devise']).to eq('Anne')
+        expect(json['device']).to eq('Anne')
       end
 
       it 'returns status code 201' do
@@ -82,7 +82,7 @@ RSpec.describe 'Data API', type: :request do
 
   # Test suite for PUT /data/:id
   describe 'PUT /data/:id' do
-    let(:valid_attributes) { { devise: 'sac de Thibaut' } }
+    let(:valid_attributes) { { device: 'sac de Thibaut' } }
 
     context 'when the record exists' do
       before { put "/data/#{datum_id}", params: valid_attributes }

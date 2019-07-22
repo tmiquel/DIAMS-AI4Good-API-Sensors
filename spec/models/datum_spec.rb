@@ -6,6 +6,6 @@ RSpec.describe Datum, type: :model do
   
   # Validation tests
   # ensure columns title and created_by are present before saving
-  it { should validate_presence_of(:devise) }
+  it { should validate_presence_of(:device) }
   
 end

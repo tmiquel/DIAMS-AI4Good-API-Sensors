@@ -19,8 +19,8 @@ class LocationsController < ApiController
       @location = Location.new(location_params)
     else #input from Apple Overland
       @location = Location.new(
-      longitude:params[:current][:geometry][:coordinates][0].to_s, 
-      latitude: params[:current][:geometry][:coordinates][1].to_s,
+      longitude:params[:locations][-1][:geometry][:coordinates][0].to_s, 
+      latitude: params[:locations][-1][:geometry][:coordinates][1].to_s,
       device: params[:device])
     end
 

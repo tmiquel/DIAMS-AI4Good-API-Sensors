@@ -25,7 +25,7 @@ class LocationsController < ApiController
     end
 
     if @location.save
-      render json: @location, status: :created, location: @location
+      render json: @location, status: :created, result: "ok", location: @location
     else
       render json: @location.errors, status: :unprocessable_entity
     end

@@ -12,7 +12,7 @@ Le capteur détecte les particules supérieures à un diamètre de 0.3μm et les
 <p> http://www.inovafitness.com/en/a/chanpinzhongxin/95.html </p>
 <br />
 <hr />
-<em>Localisation :</em>
+<h3>Localisation :</h3></br>
 <img src='https://zupimages.net/up/19/29/8be3.jpg' alt='world map picture' />
 <p>Pour obtenir une qualité de données optimale il faut y associer la position géographique à l’aide d’une application
   <br>

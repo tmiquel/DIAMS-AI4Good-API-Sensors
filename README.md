@@ -32,10 +32,25 @@ Le capteur détecte les particules supérieures à un diamètre de 0.3μm et les
 <br />
 <hr />
 <h3>iOS</h3>
-<li>0)activez la géolocalisation du téléphone
-<li>1)téléchargez l'application ==> https://apps.apple.com/us/app/overland-gps-tracker/id1292426766 ou allez dans Apple Store et téléchargez « Overland GPS Tracker »</li>
+<li>0) Activez la géolocalisation du téléphone
+<li>1) Téléchargez l'application ==> https://apps.apple.com/us/app/overland-gps-tracker/id1292426766 ou allez dans Apple Store et téléchargez « Overland GPS Tracker »</li>
 <img src="https://zupimages.net/up/19/30/sknx.png" alt='overland app'/>
-<li>2)Une fois l'application téléchargée autorisez Overland à accéder à vos mouvements et vos activités physiques. Puis allez dans settings
-<li>3)Ajustez les réglages comme sur la capture d’écran ci-dessous
-<li>4)Cliquez sur Receiver Endpoint qui se situe tout en haut de la liste; entrez l’url suivant dans « set receiver endpoint URL » en remplaçant nomdudevice par le nom de votre capteur : http://simple-ai4good-sensors-api.herokuapp.com/locations?device=nomdudevice une fois l’adresse entrée cliquez sur save
-<li>5)C’est bon vous pouvez maintenant « démarrer l’enregistrement » et régler send intervalle sur 1m
+<li>2) Une fois l'application téléchargée autorisez Overland à accéder à vos mouvements et vos activités physiques. Puis allez dans settings</li>
+<li>3) Ajustez les réglages comme sur la capture d’écran ci-dessous</li>
+<img src="https://zupimages.net/up/19/30/79ow.jpg" alt='settings overland'/>
+<li>4) Cliquez sur Receiver Endpoint qui se situe tout en haut de la liste; entrez l’url suivant dans « set receiver endpoint URL » en remplaçant nomdudevice par le nom de votre capteur : http://simple-ai4good-sensors-api.herokuapp.com/locations?device=nomdudevice une fois l’adresse entrée cliquez sur save</li>
+<li>5) C’est bon vous pouvez maintenant « démarrer l’enregistrement » et régler send intervalle sur 1m</li>
+<hr />
+<h3>API</>
+  Toutes nos données sont stockes sur une base de données et accessible via des requêtes GET sur notre API via l’adresse: https://simple-ai4good-sensors-api.herokuapp.com/data 
+
+
+Deux types de recherche sont disponible :
+<ul>
+  <li>1) : Faire une recherche par numéro d’entrée dans la base donnée :</li>
+  https://simple-ai4good-sensors-api.herokuapp.com/data/10 
+
+  <li>2) : Faire une recherche par nom de capteur :
+https://simple-ai4good-sensors-api.herokuapp.com/data?device=sensor8 
+<hr /> 
+  

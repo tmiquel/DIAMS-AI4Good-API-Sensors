@@ -34,7 +34,7 @@ Le capteur détecte les particules supérieures à un diamètre de 0.3μm et les
 <h3>iOS</h3>
 <li>0) Activez la géolocalisation du téléphone
 <li>1) Téléchargez l'application ==> https://apps.apple.com/us/app/overland-gps-tracker/id1292426766 ou allez dans Apple Store et téléchargez « Overland GPS Tracker »</li>
-<img src="https://zupimages.net/up/19/30/sknx.png" alt='overland app'/>
+<img src="https://zupimages.net/up/19/30/p3hh.png" alt='overland app'/>
 <li>2) Une fois l'application téléchargée autorisez Overland à accéder à vos mouvements et vos activités physiques. Puis allez dans settings</li>
 <li>3) Ajustez les réglages comme sur la capture d’écran ci-dessous</li>
 <img src="https://zupimages.net/up/19/30/yc1f.jpg" alt='settings overland'/>

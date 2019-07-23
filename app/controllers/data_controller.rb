@@ -5,9 +5,7 @@ class DataController < ApiController
 
   # GET /data
   def index
-    @data = Rack::Reducer.call(params, dataset: Datum.all, filters: [
-      ->(device:) { where('lower(device) like ?', "%#{device.downcase}%") },
-    ])
+    @data = Datum.all 
     render json: @data
   end
 

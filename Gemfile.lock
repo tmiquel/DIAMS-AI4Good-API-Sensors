@@ -162,12 +162,9 @@ GEM
     rb-inotify (0.10.0)
       ffi (~> 1.0)
     rgeo (2.0.1)
-<<<<<<< HEAD
     rgeo-activerecord (6.2.1)
       activerecord (>= 5.0)
       rgeo (>= 1.0.0)
-=======
->>>>>>> master
     rgeo-geojson (2.1.1)
       rgeo (>= 1.0.0)
     rspec-core (3.8.2)

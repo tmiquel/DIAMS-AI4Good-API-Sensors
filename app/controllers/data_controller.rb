@@ -5,22 +5,10 @@ class DataController < ApiController
 
   # GET /data
   def index
-<<<<<<< HEAD
-     
-     # get current user data
-     # @data = Datum.all
-     #  json_response(@data)
-   
-    # get paginated current user todos
-    @data = Datum.all.paginate(page: params[:page], per_page: 20)
-      json_response(@data)
-
-=======
     @data = Rack::Reducer.call(params, dataset: Datum.all, filters: [
       ->(device:) { where('lower(device) like ?', "%#{device.downcase}%") },
     ])
     render json: @data
->>>>>>> master
   end
 
   # GET /data/1

@@ -2,13 +2,11 @@
 <h2 align="center">Sensor measurements API</h2>
 
 
-* [Schéma relationnel](#schema relationnel)
-
-<em>#Schéma relationnel :</em>
+<h3>Schéma relationnel :</h3>
 <img src="https://zupimages.net/up/19/29/09qm.jpg" alt="a relationnale scheme showing 3 tables: Datum(ID, timestamp, device, PM2_5, PM10, positive_feeling, mixed_feeling, negative_feeling, latitude & longitude), LastDatum(ID, timestamp, device, PM2_5, PM10, positive_feeling, mixed_feeling, negative_feeling, latitude & longitude), and Location(ID, timestamp, device, latitude & longitude).">
 <br />
 <hr />
-<em>Capteurs :</em>
+<h3>Capteurs :</h3>
 <p>Les capteurs utilisés sont les SDS011 produits par Nova Fitness. Ils permettent une mesure rapide et précise de la concentration de l'air en μg/m³ de particules fines (PM2.5 et PM10).
 Le capteur détecte les particules supérieures à un diamètre de 0.3μm et les mesures sont réalisées pour des concentrations allant jusqu'à 999.99μg/m³ avec une marge d’erreur de 10%.</p>
 <p> http://www.inovafitness.com/en/a/chanpinzhongxin/95.html </p>
@@ -16,7 +14,9 @@ Le capteur détecte les particules supérieures à un diamètre de 0.3μm et les
 <hr />
 <em>Localisation :</em>
 <img src='https://zupimages.net/up/19/29/8be3.jpg' alt='world map picture' />
-<p>Pour obtenir une qualité de données optimale il faut y associer la position géographique à l’aide d’une application disponible sur Android:
+<p>Pour obtenir une qualité de données optimale il faut y associer la position géographique à l’aide d’une application
+  <br>
+  <h3>Android</h3>
   <ul>
   <li>0) Activez la géolocalisation du téléphone
   <li>1) Téléchargez l'application ==> https://play.google.com/store/apps/details?id=com.mendhak.gpslogger&hl=fr ou allez dans Google      Play et téléchargez « GPS léger (GPSLogger) </li>
@@ -31,3 +31,11 @@ Le capteur détecte les particules supérieures à un diamètre de 0.3μm et les
   Les données de géolocalisation sont accessibles sur le site http://simple-ai4good-sensors-api.herokuapp.com/locations et le site suivant affichent la mesure correspondante sur la carte (http://simple-ai4good-sensors-api.herokuapp.com/) à condition que moins d'une minute sépare l'enregistrement sur l'API de la mesure de particules fines et celle de la localisation.</p>
 <br />
 <hr />
+<h3>iOS</h3>
+1) activez la géolocalisation du téléphone
+2) téléchargez l'application ==> https://apps.apple.com/us/app/overland-gps-tracker/id1292426766 ou allez dans Apple Store et téléchargez « Overland GPS Tracker »
+<img src="https://zupimages.net/up/19/30/sknx.png" alt='overland app'/>
+3) Une fois l'application téléchargée autorisez Overland à accéder à vos mouvements et vos activités physiques. Puis allez dans settings
+4) Ajustez les réglages comme sur la capture d’écran ci-dessous
+5) Cliquez sur Receiver Endpoint qui se situe tout en haut de la liste; entrez l’url suivant dans « set receiver endpoint URL » en remplaçant nomdudevice par le nom de votre capteur : http://simple-ai4good-sensors-api.herokuapp.com/locations?device=nomdudevice une fois l’adresse entrée cliquez sur save
+6) C’est bon vous pouvez maintenant « démarrer l’enregistrement » et régler send intervalle sur 1m

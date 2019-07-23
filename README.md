@@ -42,7 +42,8 @@ Le capteur détecte les particules supérieures à un diamètre de 0.3μm et les
 <li>5) C’est bon vous pouvez maintenant « démarrer l’enregistrement » et régler send intervalle sur 1m</li>
 <hr />
 <h3>API</h3>
-  Toutes nos données sont stockes sur une base de données et accessible via des requêtes GET sur notre API via l’adresse: https://simple-ai4good-sensors-api.herokuapp.com/data 
+  Toutes nos données sont stockes sur une base de données et accessible via des requêtes GET sur notre API:</br>
+  https://simple-ai4good-sensors-api.herokuapp.com/data </br>
 
 
 Deux types de recherche sont disponible :

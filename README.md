@@ -19,8 +19,8 @@ Le capteur détecte les particules supérieures à un diamètre de 0.3μm et les
   <h3>Android</h3>
   <ul>
   <li>0) Activez la géolocalisation du téléphone
-  <li>1) Téléchargez l'application ==> https://play.google.com/store/apps/details?id=com.mendhak.gpslogger&hl=fr ou allez dans Google      Play et téléchargez « GPS léger (GPSLogger) </li>
-    <img src="https://zupimages.net/up/19/30/te6d.png" alt='gpslogger'/>
+  <li>1) Téléchargez l'application ==> https://play.google.com/store/apps/details?id=com.mendhak.gpslogger&hl=fr ou allez dans Google      Play et téléchargez « GPS léger (GPSLogger) </li></br>
+    <img src="https://zupimages.net/up/19/30/te6d.png" alt='gpslogger'/></br>
   <li>2) Une fois l'application téléchargée autorisez les conditions d’utilisation et le partage de géolocalisation. Puis allez dans le menu en haut à droite</li> 
   <li>3) Cliquez sur « détails de l’enregistrement » , puis cliquez sur « envoyer les fichiers vers une url personnalisée</li>
   <li>4) Cliquez sur Url qui se situe tout en haut de la liste; entrez l’url suivant en remplaçant nomdudevice par le nom de votre capteur : http://simple-ai4good-sensors-api.herokuapp.com/locations?device=nomdudevice&latitude=%LAT&longitude=%LON une fois l’adresse entrée cliquez sur ok</li>
@@ -33,11 +33,11 @@ Le capteur détecte les particules supérieures à un diamètre de 0.3μm et les
 <hr />
 <h3>iOS</h3>
 <li>0) Activez la géolocalisation du téléphone
-<li>1) Téléchargez l'application ==> https://apps.apple.com/us/app/overland-gps-tracker/id1292426766 ou allez dans Apple Store et téléchargez « Overland GPS Tracker »</li>
-<img src="https://zupimages.net/up/19/30/p3hh.png" alt='overland app'/>
+<li>1) Téléchargez l'application ==> https://apps.apple.com/us/app/overland-gps-tracker/id1292426766 ou allez dans Apple Store et téléchargez « Overland GPS Tracker »</li></br>
+<img src="https://zupimages.net/up/19/30/p3hh.png" alt='overland app'/></br>
 <li>2) Une fois l'application téléchargée autorisez Overland à accéder à vos mouvements et vos activités physiques. Puis allez dans settings</li>
-<li>3) Ajustez les réglages comme sur la capture d’écran ci-dessous</li>
-<img src="https://zupimages.net/up/19/30/yc1f.jpg" alt='settings overland'/>
+<li>3) Ajustez les réglages comme sur la capture d’écran ci-dessous</li></br>
+<img src="https://zupimages.net/up/19/30/yc1f.jpg" alt='settings overland'/></br>
 <li>4) Cliquez sur Receiver Endpoint qui se situe tout en haut de la liste; entrez l’url suivant dans « set receiver endpoint URL » en remplaçant nomdudevice par le nom de votre capteur : http://simple-ai4good-sensors-api.herokuapp.com/locations?device=nomdudevice une fois l’adresse entrée cliquez sur save</li>
 <li>5) C’est bon vous pouvez maintenant « démarrer l’enregistrement » et régler send intervalle sur 1m</li>
 <hr />

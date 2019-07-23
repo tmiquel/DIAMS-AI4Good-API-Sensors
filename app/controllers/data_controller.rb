@@ -5,6 +5,7 @@ class DataController < ApiController
 
   # GET /data
   def index
+<<<<<<< HEAD
      
      # get current user data
      # @data = Datum.all
@@ -14,6 +15,12 @@ class DataController < ApiController
     @data = Datum.all.paginate(page: params[:page], per_page: 20)
       json_response(@data)
 
+=======
+    @data = Rack::Reducer.call(params, dataset: Datum.all, filters: [
+      ->(device:) { where('lower(device) like ?', "%#{device.downcase}%") },
+    ])
+    render json: @data
+>>>>>>> master
   end
 
   # GET /data/1
@@ -26,7 +33,7 @@ class DataController < ApiController
     # create data belonging to current user
 
     @datum = Datum.new(datum_params)
-
+		@datum = @datum.device.downcase
     if @datum.save
       render json: @datum, status: :created, location: @datum
     else
@@ -62,7 +69,7 @@ class DataController < ApiController
       params[:positive_feeling].to_i
       params[:mixed_feeling].to_i
       params[:negative_feeling].to_i
-      params.permit(:devise, :PM2_5, :PM10, :positive_feeling, :mixed_feeling, :negative_feeling, :latitude, :longitude)
+      params.permit(:device, :PM2_5, :PM10, :positive_feeling, :mixed_feeling, :negative_feeling, :latitude, :longitude)
     end
 
     def json(params)

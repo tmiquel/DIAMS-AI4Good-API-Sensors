@@ -3,7 +3,7 @@ class Location < ApplicationRecord
 
 	def link_pos(datum)
 		if datum
-			if self.matches?(datum, 3000)
+			if self.matches?(datum, 60)
 				datum.update_attributes(latitude: self.latitude, longitude: self.longitude)
 				datum.save
 			end
@@ -11,7 +11,7 @@ class Location < ApplicationRecord
 	end
 
 	def get_last_datum
-		Datum.where(devise: self.device).last
+		Datum.where(device: self.device).last
 	end
 
 	def matches?(datum, seuil)

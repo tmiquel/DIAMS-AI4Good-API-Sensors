@@ -1,6 +1,6 @@
 FactoryBot.define do
     factory :datum do
-    devise { Faker::Name.name }
+    device { Faker::Name.name }
     PM2_5 { rand(10).to_s}
     PM10 {rand(10).to_s }
     positive_feeling { rand(10) }

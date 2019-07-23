@@ -43,6 +43,9 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
+gem 'json'
+gem "rgeo"
+gem 'rgeo-geojson'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -77,6 +80,7 @@ group :production do
 	gem 'aws-sdk-s3'
 end
 
+gem 'rack-reducer', require: 'rack/reducer'
 gem 'bcrypt', '~> 3.1.7'
 gem 'jwt'
 gem 'leaflet-rails'

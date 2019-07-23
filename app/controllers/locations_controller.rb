@@ -15,10 +15,17 @@ class LocationsController < ApiController
 
   # POST /locations
   def create
-    @location = Location.new(location_params)
+    if params.keys.include?('latitude') #input from Android GPS Logger
+      @location = Location.new(location_params)
+    else #input from Apple Overland
+      @location = Location.new(
+      longitude:params[:locations][-1][:geometry][:coordinates][0].to_s, 
+      latitude: params[:locations][-1][:geometry][:coordinates][1].to_s,
+      device: params[:device])
+    end
 
     if @location.save
-      render json: @location, status: :created, location: @location
+      render json: {"result": "ok"} #as explained in Overland README to delte previous data
     else
       render json: @location.errors, status: :unprocessable_entity
     end

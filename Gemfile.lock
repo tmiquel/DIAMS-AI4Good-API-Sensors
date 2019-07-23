@@ -102,6 +102,7 @@ GEM
       rails-dom-testing (>= 1, < 3)
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
+    json (2.2.0)
     jwt (2.2.1)
     leaflet-rails (1.5.1)
       rails (>= 4.2.0)
@@ -128,6 +129,8 @@ GEM
     pg (1.1.4)
     puma (3.12.1)
     rack (2.0.7)
+    rack-reducer (2.0.0)
+      rack (>= 1.6, < 3)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (5.2.3)
@@ -159,9 +162,12 @@ GEM
     rb-inotify (0.10.0)
       ffi (~> 1.0)
     rgeo (2.0.1)
+<<<<<<< HEAD
     rgeo-activerecord (6.2.1)
       activerecord (>= 5.0)
       rgeo (>= 1.0.0)
+=======
+>>>>>>> master
     rgeo-geojson (2.1.1)
       rgeo (>= 1.0.0)
     rspec-core (3.8.2)
@@ -253,14 +259,19 @@ DEPENDENCIES
   geocoder
   jbuilder (~> 2.5)
   jquery-rails (~> 4.3, >= 4.3.5)
+  json
   jwt
   leaflet-rails
   listen (>= 3.0.5, < 3.2)
   pg (>= 0.18, < 2.0)
   puma (~> 3.11)
+  rack-reducer
   rails (~> 5.2.3)
   rgeo
+<<<<<<< HEAD
   rgeo-activerecord
+=======
+>>>>>>> master
   rgeo-geojson
   rspec-rails (~> 3.5)
   sass-rails (~> 5.0)

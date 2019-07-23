@@ -10,13 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2019_07_15_133619) do
+=======
+ActiveRecord::Schema.define(version: 2019_07_22_074346) do
+>>>>>>> master
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "data", force: :cascade do |t|
-    t.string "devise"
+    t.string "device"
     t.string "PM2_5"
     t.string "PM10"
     t.integer "positive_feeling"
@@ -29,7 +33,7 @@ ActiveRecord::Schema.define(version: 2019_07_15_133619) do
   end
 
   create_table "last_data", force: :cascade do |t|
-    t.string "devise"
+    t.string "device"
     t.string "PM2_5"
     t.string "PM10"
     t.integer "positive_feeling"

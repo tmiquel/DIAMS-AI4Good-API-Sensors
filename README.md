@@ -23,6 +23,8 @@
 <p>Les capteurs utilisés sont les SDS011 produits par Nova Fitness. Ils permettent une mesure rapide et précise de la concentration de l'air en μg/m³ de particules fines (PM2.5 et PM10).
 Le capteur détecte les particules supérieures à un diamètre de 0.3μm et les mesures sont réalisées pour des concentrations allant jusqu'à 999.99μg/m³ avec une marge d’erreur de 10%.</p>
 <p> http://www.inovafitness.com/en/a/chanpinzhongxin/95.html </p>
+<p> La position GPS provient de la puce GPS du téléphone de l'utilisateur. Celle-ci est envoyée via les applications 
+
 <br />
 <hr />
 <h3 name="locations">Localisation :</h3></br>

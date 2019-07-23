@@ -12,6 +12,10 @@
 </ul>
 <br />
 <h3 name="scheme">Schéma relationnel :</h3>
+<p> Datum contient l'ensemble des mesures envoyées par les capteurs. L'attribut device renseigne le nom du capteur. </p>
+<p> LastDatum contient la dernière mesure envoyée par un capteur. Elle a donc autant de lignes qu'il y a de capteurs. </p>
+<p> Locations contient les mesures GPS envoyées par les téléphones des porteurs de capteurs. Cette mesure est automatiquement renseignée dans les attributs "latitude" et "longitude" de la table Data </p>
+
 <img src="https://zupimages.net/up/19/29/09qm.jpg" alt="a relationnale scheme showing 3 tables: Datum(ID, timestamp, device, PM2_5, PM10, positive_feeling, mixed_feeling, negative_feeling, latitude & longitude), LastDatum(ID, timestamp, device, PM2_5, PM10, positive_feeling, mixed_feeling, negative_feeling, latitude & longitude), and Location(ID, timestamp, device, latitude & longitude).">
 <br />
 <hr />
@@ -19,6 +23,8 @@
 <p>Les capteurs utilisés sont les SDS011 produits par Nova Fitness. Ils permettent une mesure rapide et précise de la concentration de l'air en μg/m³ de particules fines (PM2.5 et PM10).
 Le capteur détecte les particules supérieures à un diamètre de 0.3μm et les mesures sont réalisées pour des concentrations allant jusqu'à 999.99μg/m³ avec une marge d’erreur de 10%.</p>
 <p> http://www.inovafitness.com/en/a/chanpinzhongxin/95.html </p>
+<p> La position GPS provient de la puce GPS du téléphone de l'utilisateur. Celle-ci est envoyée via les applications 
+
 <br />
 <hr />
 <h3 name="locations">Localisation :</h3></br>
@@ -62,5 +68,8 @@ Pour l'instant, deux types de filtres sont appliquables :
 
   <li>2) : Recherche par nom de capteur :</li>
 https://simple-ai4good-sensors-api.herokuapp.com/data?device=sensor8 
+</ul>
+</br>
+<p> On peut également obtenir les autres bases de données (LastDatum & Locations) en utilisant les endpoints https://simple-ai4good-sensors-api.herokuapp.com/lastdata et https://simple-ai4good-sensors-api.herokuapp.com/locations </p>
 <hr /> 
   

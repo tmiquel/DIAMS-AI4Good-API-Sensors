@@ -1,6 +1,9 @@
 <h1 align="center">AI for good / DIAMS</h1>
 <h2 align="center">Sensor measurements API</h2>
 
+
+* [Schéma relationnel](#schema relationnel)
+
 <em>Schéma relationnel :</em>
 <img src="https://zupimages.net/up/19/29/09qm.jpg" alt="a relationnale scheme showing 3 tables: Datum(ID, timestamp, device, PM2_5, PM10, positive_feeling, mixed_feeling, negative_feeling, latitude & longitude), LastDatum(ID, timestamp, device, PM2_5, PM10, positive_feeling, mixed_feeling, negative_feeling, latitude & longitude), and Location(ID, timestamp, device, latitude & longitude).">
 <br />

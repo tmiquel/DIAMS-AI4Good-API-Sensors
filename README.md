@@ -41,7 +41,7 @@ Le capteur détecte les particules supérieures à un diamètre de 0.3μm et les
 <li>4) Cliquez sur Receiver Endpoint qui se situe tout en haut de la liste; entrez l’url suivant dans « set receiver endpoint URL » en remplaçant nomdudevice par le nom de votre capteur : http://simple-ai4good-sensors-api.herokuapp.com/locations?device=nomdudevice une fois l’adresse entrée cliquez sur save</li>
 <li>5) C’est bon vous pouvez maintenant « démarrer l’enregistrement » et régler send intervalle sur 1m</li>
 <hr />
-<h3>API</>
+<h3>API</h3>
   Toutes nos données sont stockes sur une base de données et accessible via des requêtes GET sur notre API via l’adresse: https://simple-ai4good-sensors-api.herokuapp.com/data 
 
 

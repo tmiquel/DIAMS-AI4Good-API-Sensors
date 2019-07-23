@@ -19,7 +19,7 @@ class DataController < ApiController
   # POST /data
   def create
     @datum = Datum.new(datum_params)
-		@datum = @datum.device.downcase
+		#@datum = @datum.device.downcase
     if @datum.save
       render json: @datum, status: :created, location: @datum
     else

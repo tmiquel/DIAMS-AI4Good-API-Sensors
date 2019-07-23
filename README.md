@@ -69,6 +69,7 @@ Pour l'instant, deux types de filtres sont appliquables :
   <li>2) : Recherche par nom de capteur :</li>
 https://simple-ai4good-sensors-api.herokuapp.com/data?device=sensor8 
 </ul>
+</br>
 <p> On peut également obtenir les autres bases de données (LastDatum & Locations) en utilisant les endpoints https://simple-ai4good-sensors-api.herokuapp.com/lastdata et https://simple-ai4good-sensors-api.herokuapp.com/locations </p>
 <hr /> 
   

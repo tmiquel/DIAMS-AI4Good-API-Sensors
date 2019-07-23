@@ -1,17 +1,26 @@
 <h1 align="center">AI for good / DIAMS</h1>
 <h2 align="center">Sensor measurements API</h2>
-
-<em>Schéma relationnel :</em>
+<br />
+<br />
+<h4>Table des matières</h4>
+<ul>
+<li><a name="scheme">Schéma relationnel</a></li>
+<li><a name="sensors">Capteurs</a></li>
+<li><a name="location">Localisation</a></li>
+<li><a name="api">API</a></li>
+</ul>
+<br />
+<em name="scheme">Schéma relationnel :</em>
 <img src="https://zupimages.net/up/19/29/09qm.jpg" alt="a relationnale scheme showing 3 tables: Datum(ID, timestamp, device, PM2_5, PM10, positive_feeling, mixed_feeling, negative_feeling, latitude & longitude), LastDatum(ID, timestamp, device, PM2_5, PM10, positive_feeling, mixed_feeling, negative_feeling, latitude & longitude), and Location(ID, timestamp, device, latitude & longitude).">
 <br />
 <hr />
-<em>Capteurs :</em>
+<em name="sensors">Capteurs :</em>
 <p>Les capteurs utilisés sont les SDS011 produits par Nova Fitness. Ils permettent une mesure rapide et précise de la concentration de l'air en μg/m³ de particules fines (PM2.5 et PM10).
 Le capteur détecte les particules supérieures à un diamètre de 0.3μm et les mesures sont réalisées pour des concentrations allant jusqu'à 999.99μg/m³ avec une marge d’erreur de 10%.</p>
 <p> http://www.inovafitness.com/en/a/chanpinzhongxin/95.html </p>
 <br />
 <hr />
-<em>Localisation :</em>
+<em name="location">Localisation :</em>
 <img src='https://zupimages.net/up/19/29/8be3.jpg' alt='world map picture' />
 <p>Pour obtenir une qualité de données optimale il faut y associer la position géographique à l’aide d’une application disponible sur Android:
   <ul><li>1) Téléchargez l'application ==> https://play.google.com/store/apps/details?id=com.mendhak.gpslogger&hl=fr</li>

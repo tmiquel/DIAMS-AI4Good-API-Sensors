@@ -5,8 +5,16 @@ class DataController < ApiController
 
   # GET /data
   def index
+		if there_is_a_valid_range
+			range = Time.parse(params["start_date"]) - Time.parse(params["end_date"])
+		else
+			params.delete(:start_date)
+			params.delete(:end_date)
+		end
     @data = Rack::Reducer.call(params, dataset: Datum.all, filters: [
       ->(device:) { where('lower(device) like ?', "%#{device.downcase}%") },
+			-> (start_date:) { where('created_at - "%#{Time.parse(params["start_date"])}%" >= "%#{Time.parse(params["start_date"]).utc.iso8601}%" " + \
+         "AND created_at <= #{range.utc.iso8601.inspect)}')},
     ])
     render json: @data
   end
@@ -54,7 +62,11 @@ class DataController < ApiController
       params[:positive_feeling].to_i
       params[:mixed_feeling].to_i
       params[:negative_feeling].to_i
-      params.permit(:device, :PM2_5, :PM10, :positive_feeling, :mixed_feeling, :negative_feeling, :latitude, :longitude)
+      params.permit(:device, :PM2_5, :PM10, :positive_feeling, :mixed_feeling, :negative_feeling, :latitude, :longitude, :created_at, :updated_at)
     end
+
+		def there_is_a_valid_range
+			(params["start_date"] < params["end_date"])
+		end
 
 end

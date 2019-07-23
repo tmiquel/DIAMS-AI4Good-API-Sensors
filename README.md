@@ -5,10 +5,10 @@
 <br />
 <h4>Table des matières</h4>
 <ul>
-<li><a name="scheme">Schéma relationnel</a></li>
-<li><a name="sensors">Capteurs</a></li>
-<li><a name="locations">Localisation</a></li>
-<li><a name="api">API</a></li>
+<li><a href="scheme">Schéma relationnel</a></li>
+<li><a href="sensors">Capteurs</a></li>
+<li><a href="locations">Localisation</a></li>
+<li><a href="api">API</a></li>
 </ul>
 <br />
 <h3 name="scheme">Schéma relationnel :</h3>

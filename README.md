@@ -32,10 +32,10 @@ Le capteur détecte les particules supérieures à un diamètre de 0.3μm et les
 <br />
 <hr />
 <h3>iOS</h3>
-1) activez la géolocalisation du téléphone
-2) téléchargez l'application ==> https://apps.apple.com/us/app/overland-gps-tracker/id1292426766 ou allez dans Apple Store et téléchargez « Overland GPS Tracker »<br>
-<img src="https://zupimages.net/up/19/30/sknx.png" alt='overland app'/><br>
-3) Une fois l'application téléchargée autorisez Overland à accéder à vos mouvements et vos activités physiques. Puis allez dans settings
-4) Ajustez les réglages comme sur la capture d’écran ci-dessous
-5) Cliquez sur Receiver Endpoint qui se situe tout en haut de la liste; entrez l’url suivant dans « set receiver endpoint URL » en remplaçant nomdudevice par le nom de votre capteur : http://simple-ai4good-sensors-api.herokuapp.com/locations?device=nomdudevice une fois l’adresse entrée cliquez sur save
-6) C’est bon vous pouvez maintenant « démarrer l’enregistrement » et régler send intervalle sur 1m
+<li>0)activez la géolocalisation du téléphone
+<li>1)téléchargez l'application ==> https://apps.apple.com/us/app/overland-gps-tracker/id1292426766 ou allez dans Apple Store et téléchargez « Overland GPS Tracker »</li>
+<img src="https://zupimages.net/up/19/30/sknx.png" alt='overland app'/>
+<li>2)Une fois l'application téléchargée autorisez Overland à accéder à vos mouvements et vos activités physiques. Puis allez dans settings
+<li>3)Ajustez les réglages comme sur la capture d’écran ci-dessous
+<li>4)Cliquez sur Receiver Endpoint qui se situe tout en haut de la liste; entrez l’url suivant dans « set receiver endpoint URL » en remplaçant nomdudevice par le nom de votre capteur : http://simple-ai4good-sensors-api.herokuapp.com/locations?device=nomdudevice une fois l’adresse entrée cliquez sur save
+<li>5)C’est bon vous pouvez maintenant « démarrer l’enregistrement » et régler send intervalle sur 1m

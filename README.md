@@ -1,18 +1,27 @@
 <h1 align="center">AI for good / DIAMS</h1>
 <h2 align="center">Sensor measurements API</h2>
 
-
-<h3>Schéma relationnel :</h3>
+<br />
+<br />
+<h4>Table des matières</h4>
+<ul>
+<li><a name="scheme">Schéma relationnel</a></li>
+<li><a name="sensors">Capteurs</a></li>
+<li><a name="locations">Localisation</a></li>
+<li><a name="api">API</a></li>
+</ul>
+<br />
+<h3 name="scheme">Schéma relationnel :</h3>
 <img src="https://zupimages.net/up/19/29/09qm.jpg" alt="a relationnale scheme showing 3 tables: Datum(ID, timestamp, device, PM2_5, PM10, positive_feeling, mixed_feeling, negative_feeling, latitude & longitude), LastDatum(ID, timestamp, device, PM2_5, PM10, positive_feeling, mixed_feeling, negative_feeling, latitude & longitude), and Location(ID, timestamp, device, latitude & longitude).">
 <br />
 <hr />
-<h3>Capteurs :</h3>
+<h3 name="sensors">Capteurs :</h3>
 <p>Les capteurs utilisés sont les SDS011 produits par Nova Fitness. Ils permettent une mesure rapide et précise de la concentration de l'air en μg/m³ de particules fines (PM2.5 et PM10).
 Le capteur détecte les particules supérieures à un diamètre de 0.3μm et les mesures sont réalisées pour des concentrations allant jusqu'à 999.99μg/m³ avec une marge d’erreur de 10%.</p>
 <p> http://www.inovafitness.com/en/a/chanpinzhongxin/95.html </p>
 <br />
 <hr />
-<h3>Localisation :</h3></br>
+<h3 name="locations">Localisation :</h3></br>
 <img src='https://zupimages.net/up/19/29/8be3.jpg' alt='world map picture' />
 <p>Pour obtenir une qualité de données optimale il faut y associer la position géographique à l’aide d’une application
   <br>
@@ -41,16 +50,17 @@ Le capteur détecte les particules supérieures à un diamètre de 0.3μm et les
 <li>4) Cliquez sur Receiver Endpoint qui se situe tout en haut de la liste; entrez l’url suivant dans « set receiver endpoint URL » en remplaçant nomdudevice par le nom de votre capteur : http://simple-ai4good-sensors-api.herokuapp.com/locations?device=nomdudevice une fois l’adresse entrée cliquez sur save</li>
 <li>5) C’est bon vous pouvez maintenant « démarrer l’enregistrement » et régler send intervalle sur 1m</li>
 <hr />
-<h3>API</h3>
-  Toutes nos données sont stockées sur une base de donnée et accessible via des requêtes GET sur notre API:</br>
+<h3 name="api">API</h3>
+  Nos données sont libres de droit et accessible via des requêtes GET sur notre API:</br>
   https://simple-ai4good-sensors-api.herokuapp.com/data </br></br>
 
-Deux types de recherche sont disponible :
+Il est possible d'appliquer des filtres aux requêtes.<br />
+Pour l'instant, deux types de filtres sont appliquables :
 <ul>
-  <li>1) : Faire une recherche par numéro d’entrée dans la base donnée :</li>
+  <li>1) : Recherche par numéro d’entrée (numéro identifiant la mesure) dans la base donnée :</li>
   https://simple-ai4good-sensors-api.herokuapp.com/data/10 
 
-  <li>2) : Faire une recherche par nom de capteur :</li>
+  <li>2) : Recherche par nom de capteur :</li>
 https://simple-ai4good-sensors-api.herokuapp.com/data?device=sensor8 
 <hr /> 
   

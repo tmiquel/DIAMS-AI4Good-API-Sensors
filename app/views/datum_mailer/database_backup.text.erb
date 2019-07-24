@@ -1,0 +1,14 @@
+<%= @time %> database backup for 'simple-ai4good-sensors-api'
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<% @data.each do |datum| %>
+device: <%= datum.device %>
+PM2_5: <%= datum.PM2_5 %>
+PM10: <%= datum.PM10 %>
+latitude: <%= datum.latitude %>
+longitude: <%= datum.longitude %>
+created_at: <%= datum.created_at %>
+updated_at: <%= datum.updated_at %>
+
+
+<% end %>

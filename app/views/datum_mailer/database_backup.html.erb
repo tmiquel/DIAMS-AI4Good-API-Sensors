@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1><%= @time %></h1>
+    <ul>
+			<% @data.each do |datum| %>
+				<li>
+					<p>
+							device: <%= datum.device %><br />
+							PM2_5: <%= datum.PM2_5 %><br />
+							PM10: <%= datum.PM10 %><br />
+							latitude: <%= datum.latitude %><br />
+							longitude: <%= datum.longitude %><br />
+							created_at: <%= datum.created_at %><br />
+							updated_at: <%= datum.updated_at %>
+					</p>
+				</li>
+			<% end %>
+    </ul>
+  </body>
+</html>

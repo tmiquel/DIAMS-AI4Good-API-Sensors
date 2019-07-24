@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+MyMailer.new
 
 class DataController < ApiController
   before_action :set_datum, only: [:show, :update, :destroy]

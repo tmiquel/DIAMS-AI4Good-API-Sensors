@@ -9,6 +9,8 @@
 <li><a href="#sensors">Capteurs</a></li>
 <li><a href="#locations">Localisation</a></li>
 <li><a href="#api">API</a></li>
+<li><a href="#userguide">User Guide</a></li>
+
 </ul>
 <br />
 <h3 name="scheme">Schéma relationnel :</h3>
@@ -27,7 +29,7 @@ Le capteur détecte les particules supérieures à un diamètre de 0.3μm et les
 
 <br />
 <hr />
-<h3 name="locations">Localisation :</h3> (http://simple-ai4good-sensors-api.herokuapp.com/)
+<h3 name="locations">Localisation :</h3>(http://simple-ai4good-sensors-api.herokuapp.com/)</br>
 <img src='https://zupimages.net/up/19/29/8be3.jpg' alt='world map picture' />
 <p>Pour obtenir une qualité de données optimale il faut y associer la position géographique à l’aide d’une application
   <br>
@@ -36,7 +38,7 @@ Le capteur détecte les particules supérieures à un diamètre de 0.3μm et les
   <li>0) Activez la géolocalisation du téléphone
   <li>1) Téléchargez l'application ==> https://play.google.com/store/apps/details?id=com.mendhak.gpslogger&hl=fr ou allez dans Google      Play et téléchargez « GPS léger (GPSLogger) </li></br>
     <img src="https://zupimages.net/up/19/30/te6d.png" alt='gpslogger'/></br>
-  <li>2) Une fois l'application téléchargée autorisez les conditions d’utilisation et le partage de géolocalisation. Puis allez dans le menu en haut à gauche</li> 
+  <li>2) Une fois l'application téléchargée autorisez les conditions d’utilisation et le partage de géolocalisation. Puis allez dans le menu en haut à droite</li> 
   <li>3) Cliquez sur « détails de l’enregistrement » , puis cliquez sur « envoyer les fichiers vers une url personnalisée</li>
   <li>4) Cliquez sur Url qui se situe tout en haut de la liste; entrez l’url suivant en remplaçant nomdudevice par le nom de votre capteur : http://simple-ai4good-sensors-api.herokuapp.com/locations?device=nomdudevice&latitude=%LAT&longitude=%LON une fois l’adresse entrée cliquez sur ok</li>
   <li>5) Puis cliquez sur « entête HTTP » taper : Content-type: application/json</li>
@@ -52,7 +54,7 @@ Le capteur détecte les particules supérieures à un diamètre de 0.3μm et les
 <img src="https://zupimages.net/up/19/30/p3hh.png" alt='overland app'/></br>
 <li>2) Une fois l'application téléchargée autorisez Overland à accéder à vos mouvements et vos activités physiques. Puis allez dans settings</li>
 <li>3) Ajustez les réglages comme sur la capture d’écran ci-dessous</li></br>
-<img src="https://zupimages.net/up/19/30/3gxi.png" alt='settings overland'/></br>
+<img src="https://zupimages.net/up/19/30/yc1f.jpg" alt='settings overland'/></br>
 <li>4) Cliquez sur Receiver Endpoint qui se situe tout en haut de la liste; entrez l’url suivant dans « set receiver endpoint URL » en remplaçant nomdudevice par le nom de votre capteur : http://simple-ai4good-sensors-api.herokuapp.com/locations?device=nomdudevice une fois l’adresse entrée cliquez sur save</li>
 <li>5) C’est bon vous pouvez maintenant « démarrer l’enregistrement » et régler send intervalle sur 1m</li>
 <hr />
@@ -70,9 +72,18 @@ Pour l'instant, deux types de filtres sont appliquables :
 https://simple-ai4good-sensors-api.herokuapp.com/data?device=sensor8 
 </ul>
 </br>
-<p> On peut également obtenir les autres bases de données (LastDatum & Locations) en utilisant les endpoints:
-  <br>
-  https://simple-ai4good-sensors-api.herokuapp.com/last_data </br>
-  https://simple-ai4good-sensors-api.herokuapp.com/locations </p>
+<p> On peut également obtenir les autres bases de données (LastDatum & Locations) en utilisant les endpoints https://simple-ai4good-sensors-api.herokuapp.com/lastdata et https://simple-ai4good-sensors-api.herokuapp.com/locations </p>
 <hr /> 
   
+<h3 name="userguide">User guide :</h3></br>
+<ul>
+  <li>1) : Allumer le capteur en poussant le bouton sur la batterie de OFF à ON, si le capteur est bien allumé la led de votre sac clignote bleue et orange.
+
+  <li>2) : Démarrer la géolocalisation.
+
+  <li>3) : Démarrer le partage de connexion pour que le capteur puisse envoyer les données, si le capteur est bien connecté a votre téléphone la led de votre sac sera bleue.
+
+  <li>4) : Remplir à la fin de la semaine le questionnaire google : https://docs.google.com/forms/d/e/1FAIpQLSdlYLlr8v0lEt-U9dF-QmwiXogiOjbjZR2NPKCsbWGWxlJGBA/viewform?usp=sf_link
+
+  <li>5) : Sur le groupe WhatsApp 'Geek for good' décrire son expérience et poster des photos. Si vous avez un problème n’hésitez pas à nous envoyer un message !
+</ul>

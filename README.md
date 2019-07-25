@@ -27,7 +27,7 @@ Le capteur détecte les particules supérieures à un diamètre de 0.3μm et les
 
 <br />
 <hr />
-<h3 name="locations">Localisation :</h3>(http://simple-ai4good-sensors-api.herokuapp.com/)</br>
+<h3 name="locations">Localisation :</h3>(http://simple-ai4good-sensors-api.herokuapp.com/)
 <img src='https://zupimages.net/up/19/29/8be3.jpg' alt='world map picture' />
 <p>Pour obtenir une qualité de données optimale il faut y associer la position géographique à l’aide d’une application
   <br>

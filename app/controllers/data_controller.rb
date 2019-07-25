@@ -21,7 +21,7 @@ class DataController < ApiController
     # create data belonging to current user
 
     @datum = Datum.new(datum_params)
-		@datum = @datum.device.downcase
+		#@datum = @datum.device.downcase
     if @datum.save
       render json: @datum, status: :created, location: @datum
     else

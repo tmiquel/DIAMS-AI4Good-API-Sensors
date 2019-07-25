@@ -52,7 +52,7 @@ Le capteur détecte les particules supérieures à un diamètre de 0.3μm et les
 <img src="https://zupimages.net/up/19/30/p3hh.png" alt='overland app'/></br>
 <li>2) Une fois l'application téléchargée autorisez Overland à accéder à vos mouvements et vos activités physiques. Puis allez dans settings</li>
 <li>3) Ajustez les réglages comme sur la capture d’écran ci-dessous</li></br>
-<img src="https://zupimages.net/up/19/30/yc1f.jpg" alt='settings overland'/></br>
+<img src="https://zupimages.net/up/19/30/3gxi.png" alt='settings overland'/></br>
 <li>4) Cliquez sur Receiver Endpoint qui se situe tout en haut de la liste; entrez l’url suivant dans « set receiver endpoint URL » en remplaçant nomdudevice par le nom de votre capteur : http://simple-ai4good-sensors-api.herokuapp.com/locations?device=nomdudevice une fois l’adresse entrée cliquez sur save</li>
 <li>5) C’est bon vous pouvez maintenant « démarrer l’enregistrement » et régler send intervalle sur 1m</li>
 <hr />

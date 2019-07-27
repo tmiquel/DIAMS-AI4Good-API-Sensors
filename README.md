@@ -45,7 +45,8 @@ Le capteur détecte les particules supérieures à un diamètre de 0.3μm et les
   <li>6) Puis cliquez sur « entête HTTP » taper : Content-type: application/json</li>
   <li>7) Finalement, dans « methode HTTP », écrivez : POST</li>
   <li>8) Revenez dans « menu » et allez sur « envoyer auto couriel et téléchargement », activez « autoriser l'envoi automatique », puis dans 'combien de fois?', entrez 1 et cliquez sur ok</li>
-  <li>9) C’est bon vous pouvez maintenant « démarrer l’enregistrement » quand vous mesurez la qualité de l’air</li>
+  <li>9) Enfin, dans « Options générales », cochez 'Lancer au démarrage de l'appareil'.
+  <li>10) C’est bon vous pouvez maintenant « démarrer l’enregistrement » quand vous mesurez la qualité de l’air</li>
   Les données de géolocalisation sont accessibles sur le site http://simple-ai4good-sensors-api.herokuapp.com/locations et le site suivant affichent la mesure correspondante sur la carte (http://simple-ai4good-sensors-api.herokuapp.com/) à condition que moins d'une minute sépare l'enregistrement sur l'API de la mesure de particules fines et celle de la localisation.</p>
 <br />
 <hr />

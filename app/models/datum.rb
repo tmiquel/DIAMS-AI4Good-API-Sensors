@@ -12,13 +12,14 @@ class Datum < ApplicationRecord
     		Datum.where(
     			"device = ? AND latitude IS NOT ? AND id < ?",
     			 self.device, nil, self.id).last
-    	return last_datum_with_loc.latitude, last_datum_with_loc.longitude
+    	return last_datum_with_loc == nil ? [nil, nil] : 
+    	last_datum_with_loc.latitude, last_datum_with_loc.longitude
     end
 
 
 
-    def self.fill_null_locations(device_name)
-		Datum.where("device = ? AND ((latitude IS ?) OR (longitude IS ?))",device_name, nil, nil).
+    def self.fill_null_locations
+		Datum.where("(latitude IS ?) OR (longitude IS ?)", nil, nil).
 		find_each do |datum|
   			datum.update(latitude: datum.get_last_location[0], 
   				longitude: datum.get_last_location[1])

@@ -5,7 +5,7 @@ class LocationsController < ApiController
   def index
     @locations = Rack::Reducer.call(params, dataset: Location.all, filters: [
       ->(device:) { where('lower(device) like ?', "%#{device.downcase}%") },
-    ])
+    ]).reverse_order!.paginate(page: params[:page], per_page: 100)
     render json: @locations
   end
 

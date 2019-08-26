@@ -7,7 +7,7 @@ class DataController < ApiController
   def index
     @data = Rack::Reducer.call(params, dataset: Datum.all, filters: [
       ->(device:) { where('lower(device) like ?', "%#{device.downcase}%") },
-    ]).paginate(page: params[:page], per_page: 100)
+    ]).reverse_order!.paginate(page: params[:page], per_page: 100)
     render json: @data
   end
 

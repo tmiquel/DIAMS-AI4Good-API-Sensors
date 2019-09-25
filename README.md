@@ -156,13 +156,11 @@ https://ai-for-good-api.herokuapp.com/api/v1/data?page=1&device=sensor10
 
 <li>1) Allumer le capteur en poussant le bouton sur la batterie de OFF à ON, si le capteur est bien allumé la led de votre sac clignote bleue et orange. </li>
 
-  
-
 <li>2) Démarrer le partage de connexion pour que le capteur puisse envoyer les données, si le capteur est bien connecté a votre téléphone la led de votre sac sera bleue. </li>
 
-  
+<li>3) Ouvrir l'application Blynk sur votre smartphone, afin de pouvoir visualiser en temps réel vos données remontées par le capteur</li>
 
-<li>3) Remplir à la fin de la semaine le questionnaire google : https://docs.google.com/forms/d/e/1FAIpQLSdlYLlr8v0lEt-U9dF-QmwiXogiOjbjZR2NPKCsbWGWxlJGBA/viewform?usp=sf_link </li>
+  <li>3) Remplir à la fin de la semaine le questionnaire google : https://docs.google.com/forms/d/e/1FAIpQLSdlYLlr8v0lEt-U9dF-QmwiXogiOjbjZR2NPKCsbWGWxlJGBA/viewform?usp=sf_link </li>
 
   
 

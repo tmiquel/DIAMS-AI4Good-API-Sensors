@@ -74,7 +74,7 @@
 
 <h3  name="bdd">Base de donées :</h3>
 
-<p> La base de données est une base non relationnelle constituée d’une table : </p>
+<p> La base de données est une base NoSQL constituée d’une table : </p>
 
 <ul>
 
